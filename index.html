@@ -5,493 +5,598 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="assets/favicon.ico" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.0/css/all.min.css"
+      integrity="sha256-auSD6WsicI+oJhpUgntiZeIHFg0Vz0mYHrERIp079QU="
+      crossorigin="anonymous"
+    />
     <title>Melody</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__logo">
-        <img src="assets/logo.png" alt="LOGO" class="header__logo__img" />
-      </div>
-      <input type="checkbox" id="nav--toggler" class="nav--toggler" />
-      <nav class="nav">
-        <ul class="nav__list">
-          <li><a href="" class="nav__list--link">latest album</a></li>
-          <li><a href="" class="nav__list--link">featured album</a></li>
-          <li><a href="" class="nav__list--link">join us</a></li>
-          <li><a href="" class="nav__list--link">portfolio</a></li>
-          <li><a href="" class="nav__list--link">event</a></li>
-          <li><a href="" class="nav__list--link">team</a></li>
-          <li><a href="" class="nav__list--link">Contact</a></li>
+    <div id="App">
+      <section class="social">
+        <p class="social__paragraph"><strong>Phone:</strong> 5555555555</p>
+        <p class="social__paragraph">E-mail: music.site@melodi.com</p>
+        <ul class="social__icon">
+          <li>
+            <i
+              class="fab fa-facebook social__icon--action"
+              aria-hidden="true"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="fab fa-twitter social__icon--action"
+              aria-hidden="true"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="fab fa-google-plus social__icon--action"
+              aria-hidden="true"
+            ></i>
+          </li>
+          <li>
+            <i
+              class="fab fa-linkedin social__icon--action"
+              aria-hidden="true"
+            ></i>
+          </li>
         </ul>
-      </nav>
-      <label for="nav--toggler" class="hamburger">
-        <span class="hamburger--line"></span>
-      </label>
-    </header>
-    <main class="main">
-      <section class="latest-album">
-        <div class="latest-album__intro">
-          <img class="latest-album__intro__img" src="assets/b1.jpg" alt="" />
-          <h2 class="latest-album__intro__header">Melodi For You!</h2>
-          <p class="latest-album__intro__paragraph">
-            Find More Innovative & Creative Music Albums.
-          </p>
-          <a href="" class="latest-album__intro--link">Download Here</a>
-        </div>
-        <div class="latest-album__description">
-          <h2 class="latest-album__description__header1">Latest Album</h2>
-          <hr class="latest-album__description__hr" />
-          <p class="latest-album__description__paragraph1">
-            We sing the best
-            <span class="latest-album__description__paragraph1--span"
-              >Songs</span
-            >
-            and now we control the world best
-            <span class="latest-album__description__paragraph1--span"
-              >Music</span
-            >
-            .
-          </p>
-          <img
-            class="latest-album__description__img"
-            src="assets/1.jpg"
-            alt=""
-          />
-          <h3 class="latest-album__description__header2">Perfect Melodi</h3>
-          <span class="latest-album__description__author">By Himanshu</span>
-          <p class="latest-album__description__paragraph2">
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            1500.
-          </p>
-          <a href="" class="latest-album__description--link">play now</a>
-          <div class="latest-album__playlist">
-            <div class="latest-album__playlist__songs">
-              <h4 class="latest-album__playlist__songs__header">
-                Melodi Song Track One
-              </h4>
-              <span class="latest-album__playlist__songs__description"
-                ><strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Album</strong
-                >: Title |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Type</strong
-                >: Rock |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Singer</strong
-                >: Dawn</span
-              >
-              <a href="" class="latest-album__playlist__songs__link--playbutton"
-                >button</a
-              >
-              <a
-                href=""
-                class="latest-album__playlist__songs__link--pausebutton"
-                >button</a
-              >
-            </div>
-            <div class="latest-album__playlist__songs">
-              <h4 class="latest-album__playlist__songs__header">
-                Melodi Song Track Two
-              </h4>
-              <span class="latest-album__playlist__songs__description"
-                ><strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Album</strong
-                >: Title |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Type</strong
-                >: Rock |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Singer</strong
-                >: Dawn</span
-              >
-              <a href="" class="latest-album__playlist__songs__link--playbutton"
-                >button</a
-              >
-              <a
-                href=""
-                class="latest-album__playlist__songs__link--pausebutton"
-                >button</a
-              >
-            </div>
-            <div class="latest-album__playlist__songs">
-              <h4 class="latest-album__playlist__songs__header">
-                Melodi Song Track Three
-              </h4>
-              <span class="latest-album__playlist__songs__description"
-                ><strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Album</strong
-                >: Title |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Type</strong
-                >: Rock |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Singer</strong
-                >: Dawn</span
-              >
-              <a href="" class="latest-album__playlist__songs__link--playbutton"
-                >button</a
-              >
-              <a
-                href=""
-                class="latest-album__playlist__songs__link--pausebutton"
-                >button</a
-              >
-            </div>
-            <div class="latest-album__playlist__songs">
-              <h4 class="latest-album__playlist__songs__header">
-                Melodi Song Track Four
-              </h4>
-              <span class="latest-album__playlist__songs__description"
-                ><strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Album</strong
-                >: Title |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Type</strong
-                >
-                : Rock |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Singer</strong
-                >
-                : Dawn</span
-              >
-              <a href="" class="latest-album__playlist__songs__link--playbutton"
-                >button</a
-              >
-              <a
-                href=""
-                class="latest-album__playlist__songs__link--pausebutton"
-                >button</a
-              >
-            </div>
-            <div class="latest-album__playlist__songs">
-              <h4 class="latest-album__playlist__songs__header">
-                Melodi Song Track Five
-              </h4>
-              <span class="latest-album__playlist__songs__description"
-                ><strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Album</strong
-                >: Title |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Type</strong
-                >
-                : Rock |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Singer</strong
-                >
-                : Dawn</span
-              >
-              <a href="" class="latest-album__playlist__songs__link--playbutton"
-                >button</a
-              >
-              <a
-                href=""
-                class="latest-album__playlist__songs__link--pausebutton"
-                >button</a
-              >
-            </div>
-            <div class="latest-album__playlist__songs">
-              <h4 class="latest-album__playlist__songs__header">
-                Melodi Song Track Six
-              </h4>
-              <span class="latest-album__playlist__songs__description"
-                ><strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Album</strong
-                ><strong
-                  class="latest-album__playlist__songs__description--strong"
-                ></strong
-                >: Title |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Type</strong
-                >
-                : Rock |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Singer</strong
-                >
-                : Dawn</span
-              >
-              <a href="" class="latest-album__playlist__songs__link--playbutton"
-                >button</a
-              >
-              <a
-                href=""
-                class="latest-album__playlist__songs__link--pausebutton"
-                >button</a
-              >
-            </div>
-            <div class="latest-album__playlist__songs">
-              <h4 class="latest-album__playlist__songs__header">
-                Melodi Song Track Seven
-              </h4>
-              <span class="latest-album__playlist__songs__description"
-                ><strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Album</strong
-                >: Title |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Type</strong
-                >: Rock |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Singer</strong
-                >: Dawn</span
-              >
-              <a href="" class="latest-album__playlist__songs__link--playbutton"
-                >button</a
-              >
-              <a
-                href=""
-                class="latest-album__playlist__songs__link--pausebutton"
-                >button</a
-              >
-            </div>
-            <div class="latest-album__playlist__songs">
-              <h4 class="latest-album__playlist__songs__header">
-                Melodi Song Track Eight
-              </h4>
-              <span class="latest-album__playlist__songs__description"
-                ><strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Album</strong
-                >: Title |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Type</strong
-                >: Rock |
-                <strong
-                  class="latest-album__playlist__songs__description--strong"
-                  >Singer</strong
-                >: Dawn</span
-              >
-              <a href="" class="latest-album__playlist__songs__link--playbutton"
-                >button</a
-              >
-              <a
-                href=""
-                class="latest-album__playlist__songs__link--pausebutton"
-                >button</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="latest-album__art">
-          <h2 class="latest-album__art__header">Music An Art...</h2>
-          <p class="latest-album__art__paragraph">
-            Music is an art form and cultural activity whose medium is sound
-            organized in time. The common elements of music are
-            <strong class="latest-album__art__paragraph--strong">pitch</strong>,
-            <strong class="latest-album__art__paragraph--strong">rhythm</strong
-            >,
-            <strong class="latest-album__art__paragraph--strong"
-              >dynamics</strong
-            >
-            and the sonic qualities of
-            <strong class="latest-album__art__paragraph--strong">timbre</strong>
-            and
-            <strong class="latest-album__art__paragraph--strong">texture</strong
-            >.
-          </p>
-          <a href="" class="latest-album__art--link">play</a>
-        </div>
       </section>
-
-      <section class="featured-album">
-        <div class="featured-album__header">Featured Album</div>
-        <div class="featured-album__card">
-          <div class="featured-album__card__content">
-            There are many variations of passages available, but the majority
-            have suffered Lorem alteration in some form, by injected look even
-            slightly believable.
-          </div>
+      <header class="header">
+        <img src="assets/logo.png" alt="LOGO" class="header__logo" />
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="" class="nav__link">latest album</a></li>
+            <li><a href="" class="nav__link">featured album</a></li>
+            <li><a href="" class="nav__link">join us</a></li>
+            <li><a href="" class="nav__link">portfolio</a></li>
+            <li><a href="" class="nav__link">event</a></li>
+            <li><a href="" class="nav__link">team</a></li>
+            <li><a href="" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
+          <div class="hamburger__line"></div>
         </div>
-        <div class="featured-album__description">
-          <div class="featured-album__description__item">
-            <h2 class="featured-album__description__item__header">Power Pop</h2>
-            <hr class="featured-album__description__item__hr" />
-            <div class="featured-album__description__item__social">
-              <span class="featured-album__description__item__social__likes"
-                >1024+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Like</a
-              >
-              <span class="featured-album__description__item__social__likes"
-                >825+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Love</a
-              >
-            </div>
-          </div>
-          <div class="featured-album__card">
-            <div class="featured-album__card__content">
-              There are many variations of passages available, but the majority
-              have suffered Lorem alteration in some form, by injected look even
-              slightly believable.
-            </div>
-          </div>
-          <div class="featured-album__description__item">
-            <h2 class="featured-album__description__item__header">
-              Bad brains
-            </h2>
-            <hr class="featured-album__description__item__hr" />
-            <div class="featured-album__description__item__social">
-              <span class="featured-album__description__item__social__likes"
-                >1024+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Like</a
-              >
-              <span class="featured-album__description__item__social__likes"
-                >825+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Love</a
-              >
-            </div>
-          </div>
-          <div class="featured-album__card">
-            <div class="featured-album__card__content">
-              There are many variations of passages available, but the majority
-              have suffered Lorem alteration in some form, by injected look even
-              slightly believable.
-            </div>
-          </div>
-          <div class="featured-album__description__item">
-            <h2 class="featured-album__description__item__header">
-              The Mars Volta
-            </h2>
-            <hr class="featured-album__description__item__hr" />
-            <div class="featured-album__description__item__social">
-              <span class="featured-album__description__item__social__likes"
-                >1024+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Like</a
-              >
-              <span class="featured-album__description__item__social__likes"
-                >825+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Love</a
-              >
-            </div>
-          </div>
-          <div class="featured-album__card">
-            <div class="featured-album__card__content">
-              There are many variations of passages available, but the majority
-              have suffered Lorem alteration in some form, by injected look even
-              slightly believable.
-            </div>
-          </div>
-          <div class="featured-album__description__item">
-            <h2 class="featured-album__description__item__header">
-              Dirty Dancing
-            </h2>
-            <hr class="featured-album__description__item__hr" />
-            <div class="featured-album__description__item__social">
-              <span class="featured-album__description__item__social__likes"
-                >1024+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Like</a
-              >
-              <span class="featured-album__description__item__social__likes"
-                >825+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Love</a
-              >
-            </div>
-          </div>
-          <div class="featured-album__card">
-            <div class="featured-album__card__content">
-              There are many variations of passages available, but the majority
-              have suffered Lorem alteration in some form, by injected look even
-              slightly believable.
-            </div>
-          </div>
-          <div class="featured-album__description__item">
-            <h2 class="featured-album__description__item__header">
-              Hotel California
-            </h2>
-            <hr class="featured-album__description__item__hr" />
-            <div class="featured-album__description__item__social">
-              <span class="featured-album__description__item__social__likes"
-                >1024+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Like</a
-              >
-              <span class="featured-album__description__item__social__likes"
-                >825+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Love</a
-              >
-            </div>
-          </div>
-          <div class="featured-album__card">
-            <div class="featured-album__card__content">
-              There are many variations of passages available, but the majority
-              have suffered Lorem alteration in some form, by injected look even
-              slightly believable.
-            </div>
-          </div>
-          <div class="featured-album__description__item">
-            <h2 class="featured-album__description__item__header">
-              Punk Compilation
-            </h2>
-            <hr class="featured-album__description__item__hr" />
-            <div class="featured-album__description__item__social">
-              <span class="featured-album__description__item__social__likes"
-                >1024+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Like</a
-              >
-              <span class="featured-album__description__item__social__likes"
-                >825+</span
-              >
-              <a href="" class="featured-album__description__item__social--link"
-                >Love</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="featured-album__pro">
-          <div class="featured-album__pro__card">
-            <h2 class="featured-album__pro__card__header">
-              Melodi, A Fully Rock Album Pro
-            </h2>
-            <p class="featured-album__pro__card__paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim sectetur adipiscing elit, sed do eiusmod tempoad minim veniam
-              consequat.
+      </header>
+      <main class="main">
+        <section class="latest-album">
+          <div class="latest-album__intro">
+            <img class="latest-album__intro__img" src="assets/b1.jpg" alt="" />
+            <h2 class="latest-album__intro__header">Melodi For You!</h2>
+            <p class="latest-album__intro__paragraph">
+              Find More Innovative & Creative Music Albums.
             </p>
-            <a href="" class="featured-album__pro__card__link">Download Now</a>
+            <a href="" class="latest-album__intro--link">Download Here</a>
           </div>
-        </div>
-      </section>
-    </main>
+          <div class="latest-album__description">
+            <h2 class="latest-album__description__header1">Latest Album</h2>
+            <hr class="latest-album__description__hr" />
+            <p class="latest-album__description__paragraph1">
+              We sing the best
+              <span class="latest-album__description__paragraph1--span"
+                >Songs</span
+              >
+              and now we control the world best
+              <span class="latest-album__description__paragraph1--span"
+                >Music</span
+              >
+              .
+            </p>
+            <div class="description__container">
+              <img
+                class="latest-album__description__img"
+                src="assets/1.jpg"
+                alt=""
+              />
+              <h3 class="latest-album__description__header2">Perfect Melodi</h3>
+              <span class="latest-album__description__author">By Himanshu</span>
+              <p class="latest-album__description__paragraph2">
+                Lorem Ipsum has been the industry's standard dummy text ever
+                since 1500.
+              </p>
+              <a href="" class="latest-album__description--link">play now</a>
+            </div>
+
+            <div class="latest-album__playlist">
+              <div class="latest-album__playlist__songs">
+                <h4 class="latest-album__playlist__songs__header">
+                  Melodi Song Track One
+                </h4>
+                <span class="latest-album__playlist__songs__description"
+                  ><strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Album</strong
+                  >: Title |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Type</strong
+                  >: Rock |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Singer</strong
+                  >: Dawn</span
+                >
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--playbutton"
+                  ><i class="fas fa-play"></i
+                ></a>
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--pausebutton"
+                  ><i class="fas fa-pause"></i
+                ></a>
+              </div>
+              <div class="latest-album__playlist__songs">
+                <h4 class="latest-album__playlist__songs__header">
+                  Melodi Song Track Two
+                </h4>
+                <span class="latest-album__playlist__songs__description"
+                  ><strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Album</strong
+                  >: Title |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Type</strong
+                  >: Rock |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Singer</strong
+                  >: Dawn</span
+                >
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--playbutton"
+                  ><i class="fas fa-play"></i
+                ></a>
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--pausebutton"
+                  ><i class="fas fa-pause"></i
+                ></a>
+              </div>
+              <div class="latest-album__playlist__songs">
+                <h4 class="latest-album__playlist__songs__header">
+                  Melodi Song Track Three
+                </h4>
+                <span class="latest-album__playlist__songs__description"
+                  ><strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Album</strong
+                  >: Title |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Type</strong
+                  >: Rock |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Singer</strong
+                  >: Dawn</span
+                >
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--playbutton"
+                  ><i class="fas fa-play"></i
+                ></a>
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--pausebutton"
+                  ><i class="fas fa-pause"></i
+                ></a>
+              </div>
+              <div class="latest-album__playlist__songs">
+                <h4 class="latest-album__playlist__songs__header">
+                  Melodi Song Track Four
+                </h4>
+                <span class="latest-album__playlist__songs__description"
+                  ><strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Album</strong
+                  >: Title |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Type</strong
+                  >
+                  : Rock |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Singer</strong
+                  >
+                  : Dawn</span
+                >
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--playbutton"
+                  ><i class="fas fa-play"></i
+                ></a>
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--pausebutton"
+                  ><i class="fas fa-pause"></i
+                ></a>
+              </div>
+              <div class="latest-album__playlist__songs">
+                <h4 class="latest-album__playlist__songs__header">
+                  Melodi Song Track Five
+                </h4>
+                <span class="latest-album__playlist__songs__description"
+                  ><strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Album</strong
+                  >: Title |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Type</strong
+                  >
+                  : Rock |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Singer</strong
+                  >
+                  : Dawn</span
+                >
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--playbutton"
+                  ><i class="fas fa-play"></i
+                ></a>
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--pausebutton"
+                  ><i class="fas fa-pause"></i
+                ></a>
+              </div>
+              <div class="latest-album__playlist__songs">
+                <h4 class="latest-album__playlist__songs__header">
+                  Melodi Song Track Six
+                </h4>
+                <span class="latest-album__playlist__songs__description"
+                  ><strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Album</strong
+                  ><strong
+                    class="latest-album__playlist__songs__description--strong"
+                  ></strong
+                  >: Title |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Type</strong
+                  >
+                  : Rock |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Singer</strong
+                  >
+                  : Dawn</span
+                >
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--playbutton"
+                  ><i class="fas fa-play"></i
+                ></a>
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--pausebutton"
+                  ><i class="fas fa-pause"></i
+                ></a>
+              </div>
+              <div class="latest-album__playlist__songs">
+                <h4 class="latest-album__playlist__songs__header">
+                  Melodi Song Track Seven
+                </h4>
+                <span class="latest-album__playlist__songs__description"
+                  ><strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Album</strong
+                  >: Title |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Type</strong
+                  >: Rock |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Singer</strong
+                  >: Dawn</span
+                >
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--playbutton"
+                  ><i class="fas fa-play"></i
+                ></a>
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--pausebutton"
+                  ><i class="fas fa-pause"></i
+                ></a>
+              </div>
+              <div class="latest-album__playlist__songs">
+                <h4 class="latest-album__playlist__songs__header">
+                  Melodi Song Track Eight
+                </h4>
+                <span class="latest-album__playlist__songs__description"
+                  ><strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Album</strong
+                  >: Title |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Type</strong
+                  >: Rock |
+                  <strong
+                    class="latest-album__playlist__songs__description--strong"
+                    >Singer</strong
+                  >: Dawn</span
+                >
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--playbutton"
+                  ><i class="fas fa-play"></i
+                ></a>
+                <a
+                  href=""
+                  class="latest-album__playlist__songs__link--pausebutton"
+                  ><i class="fas fa-pause"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="latest-album__art">
+            <h2 class="latest-album__art__header">Music An Art...</h2>
+            <p class="latest-album__art__paragraph">
+              Music is an art form and cultural activity whose medium is sound
+              organized in time. The common elements of music are
+              <strong class="latest-album__art__paragraph--strong">pitch</strong
+              >,
+              <strong class="latest-album__art__paragraph--strong"
+                >rhythm</strong
+              >,
+              <strong class="latest-album__art__paragraph--strong"
+                >dynamics</strong
+              >
+              and the sonic qualities of
+              <strong class="latest-album__art__paragraph--strong"
+                >timbre</strong
+              >
+              and
+              <strong class="latest-album__art__paragraph--strong"
+                >texture</strong
+              >.
+            </p>
+            <a href="" class="latest-album__art--link"
+              ><i class="fas fa-play"></i
+            ></a>
+          </div>
+        </section>
+
+        <section class="featured-album">
+          <div class="featured-album__header">Featured Album</div>
+
+          <div class="featured-album__description">
+            <div>
+              <div class="featured-album__card">
+                <div class="featured-album__card__content">
+                  There are many variations of passages available, but the
+                  majority have suffered Lorem alteration in some form, by
+                  injected look even slightly believable.
+                </div>
+              </div>
+              <div class="featured-album__description__item">
+                <h2 class="featured-album__description__item__header">
+                  Power Pop
+                </h2>
+                <hr class="featured-album__description__item__hr" />
+                <div class="featured-album__description__item__social">
+                  <span class="featured-album__description__item__social__likes"
+                    >1024+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Like</a
+                  >
+                  <span class="featured-album__description__item__social__likes"
+                    >825+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Love</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="featured-album__card">
+                <div class="featured-album__card__content">
+                  There are many variations of passages available, but the
+                  majority have suffered Lorem alteration in some form, by
+                  injected look even slightly believable.
+                </div>
+              </div>
+              <div class="featured-album__description__item">
+                <h2 class="featured-album__description__item__header">
+                  Bad brains
+                </h2>
+                <hr class="featured-album__description__item__hr" />
+                <div class="featured-album__description__item__social">
+                  <span class="featured-album__description__item__social__likes"
+                    >1024+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Like</a
+                  >
+                  <span class="featured-album__description__item__social__likes"
+                    >825+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Love</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="featured-album__card">
+                <div class="featured-album__card__content">
+                  There are many variations of passages available, but the
+                  majority have suffered Lorem alteration in some form, by
+                  injected look even slightly believable.
+                </div>
+              </div>
+              <div class="featured-album__description__item">
+                <h2 class="featured-album__description__item__header">
+                  The Mars Volta
+                </h2>
+                <hr class="featured-album__description__item__hr" />
+                <div class="featured-album__description__item__social">
+                  <span class="featured-album__description__item__social__likes"
+                    >1024+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Like</a
+                  >
+                  <span class="featured-album__description__item__social__likes"
+                    >825+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Love</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="featured-album__card">
+                <div class="featured-album__card__content">
+                  There are many variations of passages available, but the
+                  majority have suffered Lorem alteration in some form, by
+                  injected look even slightly believable.
+                </div>
+              </div>
+              <div class="featured-album__description__item">
+                <h2 class="featured-album__description__item__header">
+                  Dirty Dancing
+                </h2>
+                <hr class="featured-album__description__item__hr" />
+                <div class="featured-album__description__item__social">
+                  <span class="featured-album__description__item__social__likes"
+                    >1024+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Like</a
+                  >
+                  <span class="featured-album__description__item__social__likes"
+                    >825+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Love</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="featured-album__card">
+                <div class="featured-album__card__content">
+                  There are many variations of passages available, but the
+                  majority have suffered Lorem alteration in some form, by
+                  injected look even slightly believable.
+                </div>
+              </div>
+              <div class="featured-album__description__item">
+                <h2 class="featured-album__description__item__header">
+                  Hotel California
+                </h2>
+                <hr class="featured-album__description__item__hr" />
+                <div class="featured-album__description__item__social">
+                  <span class="featured-album__description__item__social__likes"
+                    >1024+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Like</a
+                  >
+                  <span class="featured-album__description__item__social__likes"
+                    >825+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Love</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="featured-album__card">
+                <div class="featured-album__card__content">
+                  There are many variations of passages available, but the
+                  majority have suffered Lorem alteration in some form, by
+                  injected look even slightly believable.
+                </div>
+              </div>
+              <div class="featured-album__description__item">
+                <h2 class="featured-album__description__item__header">
+                  Punk Compilation
+                </h2>
+                <hr class="featured-album__description__item__hr" />
+                <div class="featured-album__description__item__social">
+                  <span class="featured-album__description__item__social__likes"
+                    >1024+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Like</a
+                  >
+                  <span class="featured-album__description__item__social__likes"
+                    >825+</span
+                  >
+                  <a
+                    href=""
+                    class="featured-album__description__item__social--link"
+                    >Love</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="featured-album__pro">
+            <div class="featured-album__pro__card">
+              <h2 class="featured-album__pro__card__header">
+                Melodi, A Fully Rock Album Pro
+              </h2>
+              <p class="featured-album__pro__card__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim sectetur adipiscing elit, sed do eiusmod tempoad minim
+                veniam consequat.
+              </p>
+              <a href="" class="featured-album__pro__card__link"
+                >Download Now</a
+              >
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
   </body>
 </html>

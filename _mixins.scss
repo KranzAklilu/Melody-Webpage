@@ -1,12 +1,14 @@
-@mixin flex(
-  $direction: "row",
-  $justify: "center",
-  $align: "center",
-  $wrap: "nowrap"
-) {
+@mixin flex($direction: "row", $justify: "center", $align: "center", $wrap: "nowrap") {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
   flex-wrap: $wrap;
+}
+@mixin text($color: #fff, $size: 1rem, $weight: "regular", $text-transform: "uppercase", $line-hight: "normal") {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  text-transform: $text-transform;
+  line-height: $line-hight;
 }

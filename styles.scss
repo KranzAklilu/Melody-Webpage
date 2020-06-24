@@ -16,19 +16,20 @@ a {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+.social {
+  display: none;
+}
 .header {
   padding: 0 1em;
   position: fixed;
   width: 100%;
-  max-height: 100%;
-  z-index: 100;
+  z-index: 1;
   @include flex(column, flex-start, flex-start);
   background: $transparent;
+
   &__logo {
+    max-width: 150px;
     padding: 15px 0;
-    &__img {
-      max-width: 40%;
-    }
   }
   .nav {
     width: 100%;
@@ -42,62 +43,121 @@ body {
     transition: transform 0.5s ease-out;
     &__list {
       list-style: none;
-      margin-bottom: 10px;
-      &--link {
-        color: #fff;
-        line-height: 2em;
-        text-transform: capitalize;
-        font-size: 0.7rem;
-        opacity: 0;
-        transition: opacity 150ms ease-in-out;
-      }
-      &--link:hover {
-        color: #f2301f;
+      :hover {
+        color: $redishcolor;
       }
     }
-    &--toggler:checked ~ .nav a {
-      transition: opacity 250ms ease-in-out 250ms;
-      opacity: 1;
-    }
-    &--toggler:checked ~ .nav {
-      transform: scale(1, 1);
-      transition: transform 500ms ease-in-out;
-    }
-
-    &--toggler {
-      display: none;
+    &__link {
+      color: #fff;
+      line-height: 2em;
+      text-transform: capitalize;
+      font-size: 0.7rem;
+      z-index: 100;
+      @include text(#fff, 1.1rem, 500, capitalize, 2em);
+      opacity: 0;
+      transition: opacity 150ms ease-in-out;
     }
   }
+  .nav__active {
+    transform: scale(1, 1);
+    transition: transform 500ms ease-in-out;
+  }
+  .nav__active .nav__link {
+    transition: opacity 250ms ease-in-out 250ms;
+    opacity: 1;
+  }
   .hamburger {
+    display: block;
+    cursor: pointer;
     position: absolute;
     right: 10px;
     height: 100%;
-    display: flex;
-    align-items: center;
-
-    &--line,
-    &--line::before,
-    &--line::after {
-      position: relative;
+    @include flex(column, center, stretch, nowrap);
+    &__line {
+      transition: all 300ms ease-in-out;
+      background-color: #fff;
       display: block;
-      width: 2em;
-      border-radius: 2px;
-      height: 2px;
-      background-color: aqua;
+      width: 35px;
+      height: 3px;
+      margin: 5px 0;
     }
-    &--line::before,
-    &--line::after {
-      content: "";
-      position: absolute;
+
+    &__active .hamburger__line:nth-child(1) {
+      transform: rotate(-45deg) translate(-17px, 3px);
     }
-    &--line::before {
-      content: "";
-      bottom: 8px;
+    &__active .hamburger__line:nth-child(2) {
+      opacity: 0;
     }
-    &--line::after {
-      content: "";
-      top: 8px;
+    &__active .hamburger__line:nth-child(3) {
+      transform: rotate(45deg) translate(-15px, -1px);
     }
+  }
+}
+@media screen and (min-width: 750px) {
+  .social {
+    position: fixed;
+    display: block;
+    z-index: 10;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    background: #000;
+
+    transition: transform 500ms ease-in-out;
+    @include flex(row, stretch, center, nowrap);
+    &__paragraph {
+      padding: 0 20px;
+      color: #fff;
+      font-size: 0.8rem;
+    }
+    &__icon {
+      margin: 0 auto;
+      list-style: none;
+      color: #fff;
+      @include flex(row, stretch, stretch, nowrap);
+      &--action {
+        padding: 0 7px;
+      }
+    }
+  }
+  .social--active {
+    transform: scale(1, 0);
+    transform-origin: top;
+  }
+  .header {
+    margin: 0;
+    padding: 0;
+    top: 40px;
+    transition: transform 0.5s ease-out;
+    &__logo {
+      margin: 0 auto;
+    }
+    .nav {
+      background: $transparent;
+      all: unset;
+      z-index: 100;
+      height: 70px;
+      width: 100%;
+
+      &__list {
+        height: 100%;
+        @include flex(row, space-evenly, center, nowrap);
+      }
+      &__link {
+        all: unset;
+        z-index: 10;
+        @include text(#fff, 0.86rem, 500, uppercase, 2em);
+        &:hover {
+          color: $redishcolor;
+        }
+      }
+    }
+    .hamburger {
+      display: none;
+    }
+  }
+  .header--active {
+    transform: translateY(-40px);
   }
 }
 .main {
@@ -114,7 +174,7 @@ body {
       &__header,
       &__paragraph,
       &--link {
-        z-index: 1;
+        z-index: 0;
         position: absolute;
       }
       &__header {
@@ -203,12 +263,12 @@ body {
           color: $transparent;
           grid-column: 1 / span 1;
           grid-row: 1 / span 1;
-          font-size: 0.56rem;
+          font-size: 0.8rem;
           justify-self: flex-start;
           margin: 3px 10px;
         }
         &__description {
-          font-size: 0.45rem;
+          font-size: 0.7rem;
           color: $paragraph;
           grid-column: 1 / span 1;
           grid-row: 2 / span 1;
@@ -216,14 +276,15 @@ body {
           justify-self: flex-start;
           &--strong {
             font-family: cursive;
-            font-size: 0.5rem;
+            font-size: 0.75rem;
             color: $transparent;
             font-weight: bold;
           }
         }
         &__link {
           &--playbutton {
-            font-size: 0.4rem;
+            color: $redishcolor;
+            font-size: 0.7rem;
             width: 20px;
             grid-column: 3 / span 1;
             grid-row: 1 / span 2;
@@ -231,8 +292,9 @@ body {
             align-self: center;
           }
           &--pausebutton {
+            color: $redishcolor;
             margin: auto;
-            font-size: 0.4rem;
+            font-size: 0.7rem;
             width: 20px;
             grid-column: 4 / span 1;
             grid-row: 1 / span 2;
@@ -268,8 +330,46 @@ body {
       }
       &--link {
         display: inline-block;
-        margin: 30px 0;
+        margin: 50px 0;
         color: #fff;
+        font-size: 2.5rem;
+        &:hover {
+          color: $redishcolor;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .latest-album__description {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(200px, 600px));
+      &__header1 {
+        grid-column: 1 / span 2;
+      }
+      &__hr {
+        grid-column: 1 / span 2;
+      }
+      &__paragraph1 {
+        grid-column: 1 / span 2;
+      }
+      .description__container {
+        max-width: 80%;
+        margin-left: 60px;
+      }
+      .latest-album__playlist {
+        max-width: 100%;
+      }
+    }
+    .latest-album__art {
+      min-height: 100%;
+      padding: 0px 50px;
+      @include flex(column, center, stretch, nowrap);
+      font-size: 2rem;
+      &--link {
+        margin-top: 70px;
+        &:hover {
+          color: $redishcolor;
+        }
       }
     }
   }
@@ -358,6 +458,22 @@ body {
           color: black;
           padding: 10px 30px;
         }
+      }
+    }
+  }
+  @media screen and (min-width: 750px) {
+    .featured-album {
+      &__header {
+        grid-column: 1 / span 2;
+      }
+      &__description {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      &__card {
+        min-width: 300px;
+        max-width: 400px;
+        font-size: 1.5rem;
       }
     }
   }
